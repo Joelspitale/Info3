@@ -50,24 +50,26 @@ public class Ejercicio3 {
 			}
 		}
 			else
-				System.out.println("Estan mal distribuidos");
+				System.out.println("Por favor escriba la sentencia correctamente");
 }
 private static String fun(char a,PilaEnlazada p,char b,char c) {
 	char aux=0;
-	while(a!=aux) {
-		try {
-		aux=p.top();
-		if(aux==a)
-		return "Estan bien equilibradas los "+a; 
-		if(aux==c||aux==b)
-			aux='(';
-			return "esta mal equilibrado";
+	try {
+			while(a!=aux) {
+				aux=p.top();
+				if(aux==a)
+				return "Estan bien equilibradas la ecuacion";
+				else {
+					if(aux==c||aux==b)
+						throw new Exception("Por favor escriba la sentencia correctamente");
+				}
+			}
 		} catch (Exception e) {
-			aux='(';
-		}
+			System.out.println(e.getMessage());
+		
 	}
 	
-	return "esta mal equilibrado los:"+a;
+	return "Por favor escriba la sentencia correctamente";
 }
 
 }
