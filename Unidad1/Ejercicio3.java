@@ -2,10 +2,10 @@ package Unidad1;
 
 import javax.swing.JOptionPane;
 
-import Ejercicio3.Pila;
+//import Ejercicio3.Pila;
 
 public class Ejercicio3 {
-		public static void main(String[] args) {
+		/*public static void main(String[] args) {
 			String a = null;
 			int convertido;
 			float vec []=new float[10];;
@@ -62,6 +62,6 @@ public class Ejercicio3 {
 			
 		}
 		
-	}
+	}*/
 
 }
